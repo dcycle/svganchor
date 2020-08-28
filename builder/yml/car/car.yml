@@ -1,0 +1,26 @@
+---
+size: horizontal
+object: car
+unit: cm
+largest: 529
+example_length: 400
+largest_source: https://en.wikipedia.org/wiki/List_of_longest_consumer_road_vehicles
+version: '2020-08-27'
+image_desc: left-facing vehicle
+image_example: https://crdms.images.consumerreports.org/c_lfill,w_768,q_auto,f_auto/prod/cars/chrome/white/2020TOC020024_1280_03
+steps:
+  - instructions: front wheel
+    type: circle
+    id: -1
+  - instructions: left of the undercarriage
+    type: M
+    id: 0
+  - instructions: front of the front wheel opening
+    type: L
+    id: 1
+  - instructions: start of the arc
+    type: L
+    id: 2
+  - instructions: end of the arc
+    type: top-arc
+    id: 3

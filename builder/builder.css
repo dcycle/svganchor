@@ -1,0 +1,23 @@
+.result {
+  border: 1px solid black;
+}
+.result path {
+  fill: #FFFFFF;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+}
+input {
+  width: 100%;
+}
+td {
+  border: 1px solid black;
+}
+img {
+  max-width: 100%
+}
+.path-wrapper {
+  background: black;
+}
+.path-wrapper pre {
+  color: lightgreen;
+}
