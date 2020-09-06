@@ -1,0 +1,25 @@
+---
+meta:
+  version: 1
+object:
+  name: building
+  version: '2020-08-27'
+  image:
+    example_url: yml/building/assets/empire_state.png
+    example_url_license: https://thenounproject.com/term/empire-state-building/3947/
+relative_size:
+  axis: vertical
+  unit: m
+  average: 443
+  max: 829.8
+  max_source: https://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures
+steps:
+  - instructions: Bottom left
+    type: M
+    id: -1
+  - instructions: Bottom right
+    type: M
+    id: 0
+  - instructions: Top needle
+    type: M
+    id: 1

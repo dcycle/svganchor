@@ -1,3 +1,113 @@
+/**
+ * Four-cell grid.
+ *
+ * See https://get.foundation/building-blocks/blocks/four-squares-layout.html.
+ */
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 60em) {
+  .container {
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.grid-1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row: 1;
+}
+
+@media screen and (max-width: 60em) {
+  .grid-1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row: 1;
+  }
+}
+
+.grid-2 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row: 1;
+}
+
+@media screen and (max-width: 60em) {
+  .grid-2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 2;
+        grid-row: 2;
+  }
+}
+
+.grid-3 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row: 2;
+}
+
+@media screen and (max-width: 60em) {
+  .grid-3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 3;
+        grid-row: 3;
+  }
+}
+
+.grid-4 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 2;
+      grid-row: 2;
+}
+
+@media screen and (max-width: 60em) {
+  .grid-4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 4;
+        grid-row: 4;
+  }
+}
+
+.callout {
+  margin: 0;
+}
+
+/**
+ * Custom
+ */
+
+.path_wrapper {
+  height: 50%;
+  overflow: scroll;
+  background: black;
+}
+
 .result {
   border: 1px solid black;
 }
@@ -15,9 +125,33 @@ td {
 img {
   max-width: 100%
 }
-.path-wrapper {
-  background: black;
-}
-.path-wrapper pre {
+.console pre {
   color: lightgreen;
+}
+.error {
+  background: red;
+  padding: 10px;
+  color: white;
+}
+
+/**
+ * See https://levelup.gitconnected.com/use-javascript-to-make-an-element-follow-the-cursor-3872307778b4
+ */
+#second-cursor {
+  display: none;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  border:2px solid black;
+}
+
+.result {
+  position: relative;
+}
+.result svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

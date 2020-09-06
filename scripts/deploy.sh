@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+./scripts/destroy.sh
 docker run --rm -d --name svg_anchor -p 8085:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
 
 echo ""

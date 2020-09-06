@@ -1,26 +1,82 @@
 ---
-size: horizontal
-object: car
-unit: cm
-largest: 529
-example_length: 400
-largest_source: https://en.wikipedia.org/wiki/List_of_longest_consumer_road_vehicles
-version: '2020-08-27'
-image_desc: left-facing vehicle
-image_example: https://crdms.images.consumerreports.org/c_lfill,w_768,q_auto,f_auto/prod/cars/chrome/white/2020TOC020024_1280_03
+meta:
+  version: 1
+object:
+  name: car
+  version: '2020-08-27'
+  image:
+    example_url: yml/car/assets/orange_car.jpg
+    example_url_license: Unsplash https://unsplash.com/photos/N7RiDzfF2iw
+relative_size:
+  axis: horizontal
+  unit: cm
+  average: 400
+  max: 529
+  max_source: https://en.wikipedia.org/wiki/List_of_longest_consumer_road_vehicles
 steps:
   - instructions: front wheel
-    type: circle
+    type: image
+    url: yml/car/assets/wheel.png
+    url_license: https://www.pexels.com/photo/classic-blue-sedan-parked-on-roadside-1409980/
     id: -1
+  - instructions: back wheel
+    type: image
+    url: yml/car/assets/wheel.png
+    url_license: https://www.pexels.com/photo/classic-blue-sedan-parked-on-roadside-1409980/
+    id: -0.5
   - instructions: left of the undercarriage
-    type: M
+    type: 'start-path'
+    pathname: main-car
     id: 0
   - instructions: front of the front wheel opening
-    type: L
+    type: 'line-to'
+    pathname: main-car
     id: 1
   - instructions: start of the arc
-    type: L
+    type: 'line-to'
+    pathname: main-car
     id: 2
   - instructions: end of the arc
     type: top-arc
+    pathname: main-car
     id: 3
+  - instructions: start of the back arc
+    type: 'line-to'
+    pathname: main-car
+    id: 4
+  - instructions: end of the back arc
+    type: top-arc
+    pathname: main-car
+    id: 5
+  - instructions: end of the car
+    type: line-to
+    pathname: main-car
+    id: 6
+  - instructions: trunk
+    type: line-to
+    pathname: main-car
+    id: 7
+  - instructions: creux
+    type: line-to
+    pathname: main-car
+    id: 8
+  - instructions: top
+    type: line-to
+    pathname: main-car
+    id: 9
+  - instructions: before window
+    type: line-to
+    pathname: main-car
+    id: 10
+  - instructions: creux
+    type: line-to
+    pathname: main-car
+    id: 11
+  - instructions: front
+    type: line-to
+    pathname: main-car
+    id: 12
+  - instructions: end
+    type: line-to
+    pathname: main-car
+    id: 13

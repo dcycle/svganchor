@@ -7,7 +7,7 @@ Have you ever wanted to take a photograph of something (a car, say, or a blender
 
 This is not that tool! (For that, see tools such as [picsvg.com](https://picsvg.com)).
 
-svgAnchor will help build an simple SVG based on an image **with a set number of elements**, allowing you blend the results easily.
+svgAnchor will help build an simple SVG based on an image **with a set number of elements (a 10-point polygon, an image and circle for example)**, allowing you to create keyframes and blend the results easily.
 
 Example
 -----
@@ -19,7 +19,7 @@ I want to take two car models, a 1980 Honda Civic, and a 2020 Honda Civic, and v
 Step 1
 -----
 
-Create a YML file which defines what you are modeling, and the elements that make it up (elements are things like wheels, windows, etc.)
+Create a YML file which defines what you are modeling, and the elements that make it up (elements are things like wheels, windows, etc.). If you do not have a YML file and want to follow along, you can use the default provided car YML, and move directly to step 2.
 
 [The YML file for cars looks like this]()
 
