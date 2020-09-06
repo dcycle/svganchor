@@ -1,7 +1,7 @@
 svgAnchor
 =====
 
-[Click here to see the example]()
+[Click here to see the example](https://dcycle.github.io/svganchor/builder/blend.html)
 
 Have you ever wanted to take a photograph of something (a car, say, or a blender), and have a tool which converts it to an svgAnchor?
 
@@ -12,23 +12,23 @@ svgAnchor will help build an simple SVG based on an image **with a set number of
 Example
 -----
 
-[Click here to see the example]()
+[Click here to see the example](https://dcycle.github.io/svganchor/builder/blend.html)
 
-I want to take two car models, a 1980 Honda Civic, and a 2020 Honda Civic, and visualize how the two car models differ over time, by blending them together.
+I want to take two car models and visualize how the two car models differ over time, by blending them together.
 
 Step 1
 -----
 
 Create a YML file which defines what you are modeling, and the elements that make it up (elements are things like wheels, windows, etc.). If you do not have a YML file and want to follow along, you can use the default provided car YML, and move directly to step 2.
 
-[The YML file for cars looks like this]()
+[The YML file for cars looks like this](https://dcycle.github.io/svganchor/builder/yml/car/car.yml)
 
 Step 2
 -----
 
 Create two (or more) car SVGs using the svgAnchor build tool.
 
-[See the build tool for cars here]()
+[See the build tool for cars here](https://dcycle.github.io/svganchor/builder/)
 
 If you use Docker, you can also run:
 
@@ -40,23 +40,7 @@ Then visit http://0.0.0.0:8085/builder.html
 Step 3
 -----
 
-Use the code displayed in the builder to add to the objects folder. If you can have several objects (cars in this case), you can name them 1980civic.txt and 2020civic.txt, [like this]().
-
-Step 4
------
-
-* To view the 1980 civic, visit [this page]()
-* To view the 2020 civic, visit [this page]()
-* To see a blend of the two, visit [this page]()
-
-On Docker you can visit http://0.0.0.0:8085/result.html?1980civic
-
-About object description YAML files
------
-
-You might create a YAML file for a car which works fine but lacks, say, a proper way to make bumpers.
-
-[You might add the bumpers later on](). When you do this, svgAnchor will attempt to still make your old svgs blend with your new ones. But you may still want to modify your old SVGs.
+Copy your code and blend your items together, [like this](https://dcycle.github.io/svganchor/builder/blend.html)
 
 Credits
 -----
