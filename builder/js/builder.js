@@ -394,6 +394,10 @@ var svgAnchorBuilder = {
       var newpath = oldpath + (oldpath ? ' ' : '') + this.newPoints();
       pathselector.attr('d', newpath);
     };
+    object.input = function(info) {
+      info.instructions = 'Please click the next point on your path';
+      return svgAnchorBuilder.onePointInput(this, info);
+    };
 
     return object;
   },
